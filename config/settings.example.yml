@@ -1,0 +1,8 @@
+development: &base
+  database_url: 'postgres://localhost/foo_development'
+  session_secret: '102e1c9ddb91f964277cc627234f9987'
+test:
+  <<: *base
+  database_url: 'postgres://localhost/foo_test'
+production:
+  <<: *base
